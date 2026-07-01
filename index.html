@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOMO Café</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+
+            <h1 class="logo">FOMO</h1>
+
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+
+            <nav id="nav-menu">
+
+                <a href="index.html">INICIO</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <a href="galeria.html">GALERÍA</a>
+                <a href="contacto.html">CONTACTO</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+            <img src="img/cafe.png" class="fondo" alt="Fondo">
+            <div class="overlay"></div>
+
+
+            <div class="hero-content">
+                <h2>CAFÉ DE ESPECIALIDAD,<br> MOMENTOS SIN PRISAS.</h2>
+                <p>En FOMO Café creemos que lo mejor de la vida sucede cuando estás presente.</p>
+
+                <div class="buttons">
+                    <a href="menu.html" class="btn-primary">ver menú</a>
+                    <button class="btn-secondary" id="open-modal">Registrate</button>
+                </div>
+            </div>
+
+
+        </section>
+
+        <div class="modal" id="modal">
+
+            <div class="modal-content">
+
+                <span class="close-btn" id="close-modal">&times;</span>
+
+                <h2>Iniciar sesión</h2>
+
+                <input type="email" placeholder="Correo electrónico">
+
+                <input type="password" placeholder="Contraseña">
+
+                <button class="login-btn">Ingresar</button>
+
+                <p id="mensaje" style="display:none; color:#3F523F; text-align:center; font-weight:bold;">
+                    ¡Gracias por registrarte! ☕
+                </p>
+
+                <p class="register-text">
+                    ¿No tenés cuenta? <a href="#" id="show-register">Registrate</a>
+                </p>
+            </div>
+
+        </div>
+        <section class="features">
+
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="img/cafe1.jpg" alt="Café de especialidad">
+                </div>
+                <h3>CAFÉ DE ESPECIALIDAD</h3>
+                <p>Seleccionamos granos de origen y los preparamos con dedicación.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="img/cafe2.jpg" alt="Productos frescos">
+                </div>
+                <h3>PRODUCTOS FRESCOS y OPCIONES KETO</h3>
+                <p>Ingredientes de calidad para una experiencia auténtica.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-image">
+                    <img src="img/cafe3.jpg" alt="Hecho con pasión">
+                </div>
+                <h3>HECHO CON PASIÓN</h3>
+                <p>Cada detalle importa. Hacemos las cosas con amor, siempre.</p>
+            </div>
+
+        </section>
+
+        <section class="about">
+
+            <div class="about-text">
+
+                <h2>QUIÉNES SOMOS</h2>
+
+                <h3>FOMO: Tu pausa necesaria.</h3>
+
+                <p>
+                    Nacimos en el corazón de Vicente López con una misión simple:
+                    transformar tu café diario en una experiencia de especialidad.
+                </p>
+
+                <p>
+                    Combinamos granos seleccionados, pastelería artesanal y nuestra
+                    innovadora propuesta de café en lata para que disfrutes de la mejor
+                    calidad donde sea que estés.
+                </p>
+
+                <p>
+                    Somos un espacio pet friendly donde la ciudad baja un cambio; el
+                    lugar ideal para compartir un momento relajado junto a tu mejor amigo.
+                </p>
+
+            </div>
+
+            <div class="about-image">
+                <img src="img/about.jpg" alt="FOMO Café">
+            </div>
+
+        </section>
+
+        <section class="canned-coffee">
+
+            <div class="coffee-left">
+                <img src="img/lata.png" alt="FOMO Canned Coffee">
+            </div>
+
+            <div class="coffee-info">
+                <h2>DESCUBRÍ<br>EL SABOR DE FOMO</h2>
+
+                <div class="benefit">
+                    <h3>✔ SABOR REAL</h3>
+                    <p>Café pensado para disfrutar.</p>
+                </div>
+
+                <div class="benefit">
+                    <h3>✔ ON THE GO</h3>
+                    <p>Especialidad para llevar.</p>
+                </div>
+
+                <div class="benefit">
+                    <h3>✔ FRESCO Y SUAVE</h3>
+                    <p>Recetas equilibradas y únicas.</p>
+                </div>
+
+                <div class="benefit">
+                    <h3>✔ MOMENTOS FOMO</h3>
+                    <p>Tu pausa, donde sea.</p>
+                </div>
+
+            </div>
+
+            <div class="coffee-gallery">
+
+                <div class="gallery-item">
+                    <img src="img/cafe4.jpg" alt="">
+                    <p>Intenso y suave.<br>Ideal con hielo.</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img/cafe5.jpg" alt="">
+                    <p>Cremoso y refrescante.<br>Textura sedosa.</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img/cafe6.jpg" alt="">
+                    <p>Juan Carlos Cruz 1234,<br>Florida.<br>¡Vení a conocernos!</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="gallery-section">
+
+            <div class="gallery-container">
+
+                <button class="arrow left" onclick="scrollGallery(-300)">
+                    &#10094;
+                </button>
+
+                <div class="gallery-track" id="galleryTrack">
+
+                    <img src="img/foto1.jpg" alt="">
+                    <img src="img/foto2.jpg" alt="">
+                    <img src="img/foto3.jpg" alt="">
+                    <img src="img/foto4.jpg" alt="">
+                    <img src="img/foto5.jpg" alt="">
+                    <img src="img/foto6.jpg" alt="">
+                    <img src="img/foto7.jpg" alt="">
+                    <img src="img/foto8.jpg" alt="">
+                    <img src="img/foto9.jpg" alt="">
+                    <img src="img/foto10.jpg" alt="">
+
+                </div>
+
+                <button class="arrow right" onclick="scrollGallery(300)">
+                    &#10095;
+                </button>
+
+                <div class="instagram-box">
+
+                    <p>SEGUINOS Y VISITANOS</p>
+
+                    <a href="https://www.instagram.com/fomocafe.ba/" class="instagram-btn" target="_blank">
+                        EN INSTAGRAM
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    
+        <section class="rating-section">
+
+            <h2>¿CÓMO FUE TU EXPERIENCIA?</h2>
+
+            <p>Tu opinión nos ayuda a seguir mejorando.</p>
+
+            <div class="stars">
+
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+
+            </div>
+
+            <p id="ratingMessage"></p>
+
+        </section>
+
+    <footer class="contact-section">
+
+        <div class="map-container">
+
+            <iframe src="https://www.google.com/maps?q=FOMO+cafe+Vicente+Lopez&output=embed" width="100%" height="250"
+                style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+            <p class="address">
+                📍 Juan Carlos Cruz 1937, Vicente López
+            </p>
+
+        </div>
+
+        <div class="contact-info">
+
+            <div class="info-block">
+
+                <h3>REDES</h3>
+
+                <p>Instagram: @fomocafe.ba</p>
+                <p>TikTok: @fomocafe.ba</p>
+                <p>📞 11 3023-1937</p>
+
+            </div>
+
+            <div class="vertical-line"></div>
+
+            <div class="info-block">
+
+                <h3>HORARIOS</h3>
+
+                <p>Lunes a viernes 8:00 a 20:00</p>
+                <p>Sábados y Domingos 8:30 a 20:00</p>
+
+            </div>
+    </footer>
+
+
+    <div class="copyright">
+        © 2026 FOMO Café - Todos los derechos reservados
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
