@@ -9,6 +9,7 @@
 
     <title>Menú FOMO Café</title>
 
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -40,7 +41,7 @@
 
         <h1>CONTACTANOS</h1>
 
-        <form class="contact-form">
+        <form class="contact-form" id="contactForm">
 
             <input type="text" placeholder="Nombre" required>
 
@@ -54,6 +55,52 @@
                 SEND
             </button>
 
+            <p id="contactMensaje"
+                style="display:none; text-align:center; margin-top:15px; font-family:'Montserrat',sans-serif; font-weight:bold;">
+            </p>
+
         </form>
 
     </section>
+    <footer class="contact-section">
+
+        <div class="map-container">
+
+            <iframe src="https://www.google.com/maps?q=FOMO+cafe+Vicente+Lopez&output=embed" width="100%" height="250"
+                style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+            <p class="address">
+                📍 Juan Carlos Cruz 1937, Vicente López
+            </p>
+
+        </div>
+
+        <div class="contact-info">
+
+            <div class="info-block">
+
+                <h3>REDES</h3>
+
+                <p>Instagram: @fomocafe.ba</p>
+                <p>TikTok: @fomocafe.ba</p>
+                <p>📞 11 3023-1937</p>
+
+            </div>
+
+            <div class="vertical-line"></div>
+
+            <div class="info-block">
+
+                <h3>HORARIOS</h3>
+
+                <p>Lunes a viernes 8:00 a 20:00</p>
+                <p>Sábados y Domingos 8:30 a 20:00</p>
+
+            </div>
+    </footer>
+
+    <div class="copyright">
+        © 2026 FOMO Café - Todos los derechos reservados
+    </div>
+    </footer>
